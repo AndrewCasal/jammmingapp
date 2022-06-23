@@ -3,7 +3,7 @@ import './Track.css';
 
 class Track extends React.Component {
     renderAction() {
-        if(isRemoval) {
+        if(this.props.isRemoval) {
             <button className="Track-action">-</button>
         }
         else {
@@ -15,10 +15,10 @@ class Track extends React.Component {
         return (
         <div className="Track">
             <div className="Track-information">
-                <h3><!-- track name will go here --></h3>
-                <p><!-- track artist will go here--> | <!-- track album will go here --></p>
+                <h3>{/* <!-- track name will go here --> */} </h3>
+                <p>{/* <!-- track artist will go here--> | <!-- track album will go here --> */}</p>
             </div>
-            <button className="Track-action"><!-- + or - will go here --></button>
+            {this.renderAction()}
         </div>
         );
     }
