@@ -1,6 +1,12 @@
-const userAccessToken = ;
+let userAccessToken;
 
 const Spotify = {
+
+    getAccessToken() {
+        if(userAccessToken) {
+            return userAccessToken
+        }
+    }
 
 }
 
