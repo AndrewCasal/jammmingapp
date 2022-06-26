@@ -44,6 +44,12 @@ const Spotify = {
             uri: track.uri
         }));
         });
+    },
+
+    savePlayList(name, trackuris) {
+        if(!name || !trackuris.length) {
+            return;
+        }
     }
 }
 
