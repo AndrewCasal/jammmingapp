@@ -13,7 +13,7 @@ class Track extends React.Component {
             <button className="Track-action">-</button>
         }
         else {
-            <button className="Track-action">+</button>
+            <button className="Track-action" onClick={this.addTracK}>+</button>
         }
     }
 
