@@ -1,3 +1,5 @@
+import SearchBar from "../Components/SearchBar/SearchBar";
+
 let userAccessToken;
 const clientId = '6070b9e789ad4f5bb242f566b5164a7a';
 const redirectUri = 'http://localhost:3000/';
@@ -21,9 +23,17 @@ const Spotify = {
             return accessToken;
         }
         else {
-            const accessUrl = 'https://accounts.spotify.com/authorize?client_id={clientId}&response_type=token&scope=playlist-modify-public&redirect_uri={redirectUri}';
+            const accessUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectUri}`;
         }
     }
+
+    search(term) {
+        const accessToken = Spotify.getAccessToken();
+        return fetch(`https://api.spotify.com/v1/search?type=track&q=${term}`, {headers: {
+            Authorization: `Bearer ${accessToken}`
+        }
+    }
+    )
 }
 
 export default Spotify;
