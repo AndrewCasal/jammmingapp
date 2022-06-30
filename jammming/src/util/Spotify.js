@@ -36,7 +36,7 @@ const Spotify = {
         return response.json();
     }).then(jsonResponse => {
         if (!jsonResponse.tracks) {
-            return []
+            return [];
         }
         return jsonResponse.tracks.items.map(track => ({
             id: track.id,
@@ -67,14 +67,14 @@ const Spotify = {
                 method: 'POST',
                 body: JSON.stringify({name: name})
             }).then(response => response.json()
-        ).then(jsonResponse => {
-            const playlistId = jsonResponse.id;
-            return fetch(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`, {
-                headers: headers,
-                method: 'POST',
-                body: JSON.stringify({uris: trackUris})
+            ).then(jsonResponse => {
+                const playlistId = jsonResponse.id;
+                return fetch(`https://api.spotify.com/v1/users/${userId}/playlists/${playlistId}/tracks`, {
+                    headers: headers,
+                    method: 'POST',
+                    body: JSON.stringify({uris: trackUris})
+                })
             })
-        })
         })
     }
 }
