@@ -50,6 +50,7 @@ class App extends React.Component {
         playlistTracks: []
       })
     })
+    document.querySelectorAll('input')[1].value = 'New Playlist';
   }
 
   search(term) {
