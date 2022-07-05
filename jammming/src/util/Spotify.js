@@ -48,7 +48,7 @@ const Spotify = {
         });
     },
 
-    savePlayList(name, trackUris) {
+    savePlaylist(name, trackUris) {
         if(!name || !trackUris.length) {
             return;
         }
@@ -75,7 +75,7 @@ const Spotify = {
                     body: JSON.stringify({uris: trackUris})
                 })
             })
-        })
+        }).catch(err => console.log(err));
     }
 }
 
