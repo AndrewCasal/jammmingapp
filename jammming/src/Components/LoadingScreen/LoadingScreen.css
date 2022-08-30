@@ -18,4 +18,8 @@ h1 .highlight {
 h2 {
     color: #010c3f;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    padding-top: 300px;
 }
