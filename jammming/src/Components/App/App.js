@@ -66,11 +66,16 @@ class App extends React.Component {
       return alert('There are no tracks in your playlist dude');
     }
 
-    const loadScreen = () => {
+    let pending = false;
+
+    loadScreen() {
+      pending = true;
       return (
         <LoadingScreen />
       )
     }
+
+
     
   }
 
