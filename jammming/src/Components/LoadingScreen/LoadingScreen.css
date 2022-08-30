@@ -1,5 +1,5 @@
 body {
-
+    background-color: #6c41ec;
 }
 
 h1 {
@@ -9,8 +9,13 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.88rem;
     color: #fff;
-  }
+}
 
-  h1 .highlight {
+h1 .highlight {
     color: #6c41ec;
-  }
+}
+
+h2 {
+    color: #010c3f;
+    font-family: 'Poppins', sans-serif;
+}
