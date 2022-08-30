@@ -61,8 +61,13 @@ class App extends React.Component {
   }
 
   loadingScreen() {
-    
+      if(playlistTracks.id) {
+
+      } else {
+          return alert('No songs saved to your new playlist!');
+      }
   }
+
 
   render() {
     return (
