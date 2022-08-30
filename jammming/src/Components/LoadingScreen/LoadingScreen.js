@@ -1,6 +1,10 @@
 import React from 'react';
 
 class LoadingScreen extends React.Componenet {
+    constructor(props) {
+        super(props);
+    }
+    
     render() {
         return (
             <div className="loading_page">
