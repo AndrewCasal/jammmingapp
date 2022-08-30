@@ -61,6 +61,8 @@ class App extends React.Component {
 
   loadingPlaylist() {
     var saveButton = document.getElementsByClassName("Playlist-save");
+
+    saveButton.onClick()
   }
 
   render() {
