@@ -77,12 +77,15 @@ class App extends React.Component {
 
     const savingPlaylist = async() => {
       try {
-        this.savePlaylist() {
-
+        await this.savePlaylist();
+        if(response.ok){
+          pending;
+        }
+        catch (error) {
+          pending === true
         }
       }
-    }
-    
+    }   
   }
 
   render() {
