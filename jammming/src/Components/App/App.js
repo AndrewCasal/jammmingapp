@@ -64,6 +64,13 @@ class App extends React.Component {
     if(!this.state.playlistTracks.length) {
       return alert('There are no tracks in your playlist dude');
     }
+
+    const loadScreen = () => {
+      return (
+        <LoadingScreen />
+      )
+    }
+    
   }
 
   render() {
