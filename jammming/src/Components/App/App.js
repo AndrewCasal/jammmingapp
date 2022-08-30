@@ -53,6 +53,10 @@ class App extends React.Component {
     document.querySelectorAll('input')[1].value = 'New Playlist';
   }
 
+  loadingScreen() {
+    
+  }
+
   search(term) {
     Spotify.search(term).then(searchResults => {
       this.setState({searchResults: searchResults})
