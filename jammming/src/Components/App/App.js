@@ -69,13 +69,20 @@ class App extends React.Component {
     let pending = false;
 
     loadScreen() {
-      pending = true;
-      return (
+      if(pending === true) {}
+        return (
         <LoadingScreen />
-      )
+        )
+      }
     }
 
+    const savingPlaylist = async() => {
+      try {
+        this.savePlaylist() {
 
+        }
+      }
+    }
     
   }
 
