@@ -61,6 +61,9 @@ class App extends React.Component {
   }
 
   loadingPlaylist() {
+    if(!this.state.playlistTracks.length) {
+      return alert('There are no tracks in your playlist dude');
+    }
   }
 
   render() {
