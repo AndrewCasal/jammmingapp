@@ -59,6 +59,10 @@ class App extends React.Component {
     })
   }
 
+  loadingPlaylist() {
+    
+  }
+
   render() {
     return (
       <div>
