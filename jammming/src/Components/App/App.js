@@ -62,10 +62,12 @@ class App extends React.Component {
   loadingPlaylist() {
     var saveButton = document.getElementsByClassName("Playlist-save");
     var saving = this.savePlaylist();
-    trackCheck = () => {
-      if(!this.playlistTracks.length) {
+    var savedTracks = this.playlistTracks.length;
+    const trackCheck = () => {
+      if(!savedTracks) {
         return alert('You got no tracks in your playlist dude!');
       }
+
     }
 
     saveButton.onClick()
