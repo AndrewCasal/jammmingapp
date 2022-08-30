@@ -68,9 +68,8 @@ class App extends React.Component {
 
     let pending = false;
 
-    loadScreen() {
-      if(pending === true) {}
-        return (
+    if(pending === true) {
+      return (
         <LoadingScreen />
         )
       }
