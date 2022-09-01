@@ -66,11 +66,6 @@ class App extends React.Component {
     const noTracks = 'There are no tracks in your playlist dude!';
     const playlistStatus = this.playlistTracks.length;
 
-
-    const isLoading() {
-      const [pending, setPending] = useState('');
-    }
-
     const isNotLoading = () => {
       trackCheck();
       this.savePlaylist();
