@@ -62,6 +62,9 @@ class App extends React.Component {
   }
 
   loadingPlaylist() {
+    const [loading, setLoading] = useState();
+    const noTracks = 'There are no tracks in your playlist dude!';
+
     
 
     const isLoading() {
