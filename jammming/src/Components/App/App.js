@@ -66,6 +66,10 @@ class App extends React.Component {
     const noTracks = 'There are no tracks in your playlist dude!';
     const playlistStatus = this.playlistTracks.length;
 
+    useEffect(() => {
+      alert(noTracks);
+    });
+
     const isNotLoading = () => {
       trackCheck();
       this.savePlaylist();
