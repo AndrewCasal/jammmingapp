@@ -80,8 +80,11 @@ class App extends React.Component {
 
     const isLoading = () => {
       trackCheck();
-
+      this.savePlaylist();
+      trackCheck();
     }
+
+    isLoading();
   }
   
 
