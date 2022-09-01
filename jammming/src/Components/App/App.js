@@ -64,18 +64,18 @@ class App extends React.Component {
   loadingPlaylist() {
     let pending = false;
     
+    if(pending === true) {
+      return (
+        <LoadingScreen />
+      )
+    }
+    
     const trackCheck = () => {
       if(!this.state.playlistTracks.length) {
         return alert('There are no tracks in your playlist dude');
       } else {
         pending = true;
       }
-    }
-
-    if(pending === true) {
-      return (
-        <LoadingScreen />
-      )
     }
 
     const isLoading = () => {
