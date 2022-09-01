@@ -76,11 +76,11 @@ class App extends React.Component {
         return noTracks
       }
       else {
-        setLoading(<LoadingScreen />)
-        saving;
-        setLoading();
+        setLoading(<LoadingScreen />).then(saving).then(setLoading());
       }
     }
+
+    isLoading();
   }
   
 
