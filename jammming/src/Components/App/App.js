@@ -65,6 +65,7 @@ class App extends React.Component {
     const [loading, setLoading] = useState();
     const noTracks = 'There are no tracks in your playlist dude!';
     const playlistStatus = this.playlistTracks.length;
+    const saving = this.savePlaylist();
 
     useEffect(() => {
       alert(noTracks);
@@ -75,7 +76,9 @@ class App extends React.Component {
         return noTracks
       }
       else {
-        
+        setLoading(<LoadingScreen />)
+        saving;
+        setLoading();
       }
     }
 
