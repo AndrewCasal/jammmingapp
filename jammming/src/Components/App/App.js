@@ -69,11 +69,14 @@ class App extends React.Component {
     useEffect(() => {
       alert(noTracks);
     });
-
-    const isNotLoading = () => {
-      trackCheck();
-      this.savePlaylist();
-      trackCheck();
+    
+    const isLoading = () => {
+      if (!playlistStatus) {
+        return noTracks
+      }
+      else {
+        
+      }
     }
 
     isLoading();
