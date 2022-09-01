@@ -74,19 +74,7 @@ class App extends React.Component {
         )
       }
     }
-
-    const savingPlaylist = async() => {
-      try {
-        await this.savePlaylist();
-        if(response.ok){
-          pending;
-        }
-        catch (error) {
-          pending === true
-        }
-      }
-    }   
-  }
+  
 
   render() {
     return (
@@ -96,12 +84,12 @@ class App extends React.Component {
         <SearchBar onSearch={this.search} />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
-            <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onSave={this.savePlaylist} />
+            <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onSave={this.loadingScreen} />
           </div>
         </div>
       </div>
       );
     }
-  }
+}
 
 export default App;
