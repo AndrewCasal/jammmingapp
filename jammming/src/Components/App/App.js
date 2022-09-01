@@ -81,8 +81,6 @@ class App extends React.Component {
         setLoading();
       }
     }
-
-    isLoading();
   }
   
 
