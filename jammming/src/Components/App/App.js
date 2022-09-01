@@ -78,7 +78,11 @@ class App extends React.Component {
       }
     }
 
-    const isLoading = () => {
+    const isLoading() {
+      const [pending, setPending] = useState('');
+    }
+
+    const isNotLoading = () => {
       trackCheck();
       this.savePlaylist();
       trackCheck();
