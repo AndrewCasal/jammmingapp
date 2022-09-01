@@ -62,13 +62,7 @@ class App extends React.Component {
   }
 
   loadingPlaylist() {
-    let pending = false;
     
-    if(pending === true) {
-      return (
-        <LoadingScreen />
-      )
-    }
     
     const trackCheck = () => {
       if(!this.state.playlistTracks.length) {
