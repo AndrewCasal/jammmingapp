@@ -63,14 +63,6 @@ class App extends React.Component {
 
   loadingPlaylist() {
     
-    
-    const trackCheck = () => {
-      if(!this.state.playlistTracks.length) {
-        return alert('There are no tracks in your playlist dude');
-      } else {
-        pending = true;
-      }
-    }
 
     const isLoading() {
       const [pending, setPending] = useState('');
