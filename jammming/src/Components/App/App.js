@@ -61,6 +61,7 @@ class App extends React.Component {
     })
   }
 
+  //Trying to render a loading page under LoadingScreen.js when playlist is saving
   loadingPlaylist() {
     const [loading, setLoading] = useState();
     const noTracks = 'There are no tracks in your playlist dude!';
