@@ -5,6 +5,7 @@ import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
 import Spotify from '../../util/Spotify';
 import LoadingScreen from '../LoadingScreen/LoadingScreen';
+import Loading from '../../util/Loading';
 
 class App extends React.Component {
   constructor(props) {
@@ -62,7 +63,7 @@ class App extends React.Component {
   }
 
   //Trying to render a loading page under LoadingScreen.js when playlist is saving
-  loadingPlaylist() {
+  {/* loadingPlaylist() {
     const [loading, setLoading] = useState();
     const noTracks = 'There are no tracks in your playlist dude!';
     const playlistStatus = this.playlistTracks.length;
@@ -82,7 +83,7 @@ class App extends React.Component {
     }
 
     isLoading();
-  }
+  } */}
   
 
   render() {
